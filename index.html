@@ -41,7 +41,7 @@
             float: right;
             width: 200px;
             height: auto;
-            margin-top: -40px;
+            margin-top: -10px;
         }
         .email {
             margin-top: 2px;
@@ -61,6 +61,10 @@
             text-align: left; /* Der Text innerhalb ist links ausgerichtet */
             max-width: 300px; /* Maximalbreite des Gedichts, damit es nicht zu breit wird */
         }
+        .poem .author {
+            display: block; /* Ermöglicht das Umfließen auf eine neue Zeile */
+            text-align: right; /* Rechtsbündige Ausrichtung des Autors */
+        }
     </style>
 </head>
 <body>
@@ -69,7 +73,7 @@
         That there are less to come—<br>
         Afflictive is the Adjective<br>
         But affluent the doom—<br>
-        <em>Emily Dickinson</em></p>
+        <span class="author">Emily Dickinson</span></p>
     </div>
     <p>we're both turning 30 and want to celebrate big, with all our Berlin friends & companions</p>
     <p>so save the date, we're throwing a party</p>
