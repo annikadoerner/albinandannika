@@ -10,60 +10,79 @@
             color: white;
             font-family: 'Times New Roman', serif;
             text-align: left;
-            padding: 29px;
+            padding: 5%;
             line-height: 1.1;
         }
         h1 {
-            font-size: 31px;
+            font-size: 2rem;
             font-style: italic;
         }
         p, h2 {
-            font-size: 14px;
+            font-size: 1rem;
             font-style: italic;
         }
         .highlight {
-            font-size: 27px;
+            font-size: 1.8rem;
             font-style: italic;
             margin: 20px 0;
             font-weight: bold;
         }
         .address {
-            font-size: 14px;
+            font-size: 1rem;
             font-style: italic;
             margin: 10px 0;
         }
         .signature {
-            font-size: 15px;
+            font-size: 1rem;
             font-style: italic;
             margin-top: 40px;
         }
         img {
             float: right;
-            width: 200px;
+            width: 100%;
+            max-width: 200px;
             height: auto;
             margin-top: -185px;
         }
         .email {
             margin-top: 2px;
-            font-size: 12px;
+            font-size: 0.9rem;
             font-style: italic;
-            text-indent: 140px;
+            text-indent: 0;
             margin-bottom: 40px;
         }
         .poem {
-            font-size: 12px;
+            font-size: 0.9rem;
             text-align: center;
             margin-bottom: 90px;
         }
         .poem p {
-            display: inline-block; /* Ermöglicht die zentrierte Ausrichtung */
-            text-align: left; /* Der Text innerhalb ist links ausgerichtet */
-            max-width: 300px; /* Maximalbreite des Gedichts, damit es nicht zu breit wird */
+            display: inline-block;
+            text-align: left;
+            max-width: 300px;
         }
         .poem .author {
-            display: block; /* Ermöglicht das Umfließen auf eine neue Zeile */
-            text-align: right; /* Rechtsbündige Ausrichtung des Autors */
+            display: block;
+            text-align: right;
             font-style: italic;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 2%;
+                text-align: center;
+            }
+            img {
+                float: none;
+                margin-top: 20px;
+                width: 80%;
+            }
+            .email {
+                text-indent: 0;
+                text-align: center;
+            }
+            .poem p {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -84,10 +103,7 @@
     </div>
     <p>from 10pm till late<br><br></p>
 
-    <p>to get on the list, we kindly ask you to sign up by donating 4€ (or 8€ for +1) to cover parts of the costs</p>
-    <div class="email">paypal to: annika.doerner@hotmail.de</div>
-
-     <p>once signed up, we'll send you the location</p>
+    <p>in order to cover parts of the costs, we kindly ask you to tip in 4€+ at the door</p>
 
     <p>sending kisses</p>
 
