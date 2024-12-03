@@ -44,7 +44,6 @@
         padding: 10px 20px;
         background-color: black; /* Hintergrundfarbe auf Schwarz ändern */
         color: white; /* Schriftfarbe auf Weiß setzen */
-        border: 2px solid white; /* Optional: weiße Umrandung hinzufügen */
         border-radius: 5px;
         cursor: pointer;
         font-size: 1.6rem; /* Gleiche Schriftgröße wie bei "Thursday, December 19th" */
@@ -55,12 +54,18 @@
         }
 
         #textField {
-        display: none; /* Textfeld standardmäßig verstecken */
+        display: none;
         margin-top: 10px;
         padding: 5px;
-        font-size: 14px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
+        background-color: black; /* Hintergrundfarbe auf Schwarz */
+        color: white; /* Schriftfarbe auf Weiß */
+        border: 2px solid white; /* Weiße Umrandung */
+        border-radius: 5px;
+        font-size: 1.6rem; /* Gleiche Schriftgröße wie "Chausseestraße 131, 10115" */
+        font-style: italic; /* Kursivschrift */
+        font-family: 'Times New Roman', serif; /* Gleiche Schriftart */
+        width: 100%; /* Optional: Passt die Breite an */
+        box-sizing: border-box; /* Verhindert, dass Padding die Breite verändert */
         }
         .address {
             font-size: 1rem;
