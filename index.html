@@ -180,9 +180,26 @@
         // JavaScript für den Hover-Effekt
         const hoverButton = document.getElementById("hoverButton");
         const textField = document.getElementById("textField");
+        let isVisible = false;
 
-        hoverButton.addEventListener("mouseover", () => {
-            textField.style.display = "block";
+        hoverButton.addEventListener("click", () => {
+            if (isVisible) {
+                textField.style.display = "none";
+                isVisible = false; // Zustand aktualisieren
+            } else {
+                const rect = hoverButton.getBoundingClientRect();
+                textField.style.top = `${rect.bottom + 5}px`; // Position unterhalb des Buttons
+                textField.style.left = `${rect.left}px`; // Gleiche horizontale Ausrichtung wie der Button
+                textField.style.display = "block";
+                isVisible = true; // Zustand aktualisieren
+            }
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!hoverButton.contains(event.target) && !textField.contains(event.target)) {
+                textField.style.display = "none";
+                isVisible = false;
+            }
         });
 
         hoverButton.addEventListener("mouseout", () => {
