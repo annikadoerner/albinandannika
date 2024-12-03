@@ -58,18 +58,21 @@
         }
 
         #textField {
-        display: none;
-        margin-top: 10px;
-        padding: 5px;
-        background-color: black; /* Hintergrundfarbe auf Schwarz */
-        color: white; /* Schriftfarbe auf Weiß */
-        border: 2px solid white; /* Weiße Umrandung */
-        border-radius: 5px;
-        font-size: 1.6rem; /* Gleiche Schriftgröße wie "Chausseestraße 131, 10115" */
+        display: none; /* Standardmäßig versteckt */
+        position: absolute; /* Position über anderen Elementen */
+        top: 60px; /* Abstand von der Oberseite des Buttons */
+        right: 80px; /* Abstand von der linken Seite */
+        width: 150px; /* Breite des Textfelds */
+        height: auto; /* Automatische Höhe basierend auf dem Inhalt */
+        padding: 10px;
+        background-color: black; /* Schwarzer Hintergrund */
+        color: white; /* Weiße Schriftfarbe */
+        border: none; /* Keine Umrandung */
+        font-size: 1.2rem; /* Dezente Schriftgröße */
         font-style: italic; /* Kursivschrift */
-        font-family: 'Times New Roman', serif; /* Gleiche Schriftart */
-        width: 100%; /* Optional: Passt die Breite an */
-        box-sizing: border-box; /* Verhindert, dass Padding die Breite verändert */
+        font-family: 'Times New Roman', serif; /* Schriftart */
+        box-shadow: none; /* Keine Schatten */
+        z-index: 1000;
         }
         .address {
             font-size: 1rem;
