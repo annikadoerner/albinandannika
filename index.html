@@ -52,27 +52,30 @@
         font-family: 'Times New Roman', serif; /* Gleiche Schriftart */
         font-weight: normal; /* Optional: Gleiche Schriftstärke */
         position: absolute; /* Positionierung relativ zur Seite */
-        top: 80px; /* Abstand vom oberen Rand */
-        right: 80px; /* Abstand vom rechten Rand */
+        top: 120px; /* Abstand vom oberen Rand */
+        right: 120px; /* Abstand vom rechten Rand */
         z-index: 1000; /* Stellt sicher, dass der Button über anderen Elementen liegt */
         }
 
         #textField {
         display: none; /* Standardmäßig versteckt */
         position: absolute; /* Position über anderen Elementen */
-        top: 60px; /* Abstand von der Oberseite des Buttons */
-        right: 80px; /* Abstand von der linken Seite */
-        width: 150px; /* Breite des Textfelds */
+        top: 150px; /* Abstand von der Oberseite des Buttons */
+        right: 20px; /* Abstand von der linken Seite */
+        width: 350px; /* Breite des Textfelds */
         height: auto; /* Automatische Höhe basierend auf dem Inhalt */
-        padding: 10px;
-        background-color: black; /* Schwarzer Hintergrund */
+        padding: 5px; /* Dezenter Innenabstand */
+        background-color: transparent; /* Hintergrund unsichtbar, falls gewünscht */
         color: white; /* Weiße Schriftfarbe */
-        border: none; /* Keine Umrandung */
+        border: none; /* Entfernt die sichtbare Umrandung */
         font-size: 1.2rem; /* Dezente Schriftgröße */
         font-style: italic; /* Kursivschrift */
         font-family: 'Times New Roman', serif; /* Schriftart */
-        box-shadow: none; /* Keine Schatten */
-        z-index: 1000;
+        box-shadow: none; /* Entfernt Schatteneffekte */
+        z-index: 1001; /* Sicherstellen, dass es über allem liegt */
+        resize: none; /* Verhindert Größenänderung */
+        overflow: hidden; /* Verhindert Scrollbalken */
+        outline: none; /* Entfernt den Fokusrahmen */
         }
         .address {
             font-size: 1rem;
