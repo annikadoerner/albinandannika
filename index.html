@@ -40,6 +40,25 @@
             margin-top: 50px
             margin-bottom: 10px;
         }
+        #hoverButton {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        }
+
+        #textField {
+        display: none; /* Textfeld standardmäßig verstecken */
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        }
         .address {
             font-size: 1rem;
             font-style: italic;
@@ -135,5 +154,22 @@
     <div class="signature">Albin & Annika</div>
 
     <img src="foto.jpeg" alt="Albin & Annika">
+    
+     <button id="hoverButton">Hover me!</button>
+    <input type="text" id="textField" placeholder="Enter your text here...">
+
+    <script>
+        // JavaScript für den Hover-Effekt
+        const hoverButton = document.getElementById("hoverButton");
+        const textField = document.getElementById("textField");
+
+        hoverButton.addEventListener("mouseover", () => {
+            textField.style.display = "block";
+        });
+
+        hoverButton.addEventListener("mouseout", () => {
+            textField.style.display = "none";
+        });
+    </script>
 </body>
 </html>
